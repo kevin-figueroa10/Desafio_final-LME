@@ -1,11 +1,5 @@
 {
-  "buildCommand": "echo 'No build required'",
+  "buildCommand": "",
   "outputDirectory": ".",
-  "framework": "static",
-  "env": {},
-  "git": {
-    "deploymentEnabled": {
-      "main": true
-    }
-  }
+  "public": true
 }

@@ -42,6 +42,8 @@ LME_DESAFIO/
 ├── .gitignore
 └── README.md
 ```
+
+
 ## 📝 Licencia
 
 © 2026 AguaTech - Todos los derechos reservados.

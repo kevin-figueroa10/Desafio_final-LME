@@ -31,20 +31,6 @@ El dashboard monitorea 6 parámetros de calidad del agua:
 5. **Turbiedad** - NTU
 6. **Potencial Redox** - mV
 
-## 🚀 Despliegue en Vercel
-
-### Opción 1: Desde GitHub (Recomendado)
-1. Sube el código a GitHub
-2. Ve a [vercel.com](https://vercel.com)
-3. Conecta tu repositorio GitHub
-4. Vercel desplegará automáticamente
-
-### Opción 2: Vercel CLI
-```bash
-npm i -g vercel
-vercel
-```
-
 ## 📁 Estructura del Proyecto
 
 ```
@@ -56,12 +42,6 @@ LME_DESAFIO/
 ├── .gitignore
 └── README.md
 ```
-
-## 🔧 Requisitos
-
-- Navegador moderno (Chrome, Firefox, Safari, Edge)
-- No requiere Node.js ni dependencias
-
 ## 📝 Licencia
 
 © 2026 AguaTech - Todos los derechos reservados.
@@ -72,4 +52,3 @@ Kevin Figueroa - Desafío LME Final
 
 ---
 
-**Despliegue en tiempo real:** 🔗 [Ver en Vercel](https://desafio-final-lme.vercel.app)

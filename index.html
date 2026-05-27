@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard responsivo de monitoreo de calidad del agua - AguaTech">
+    <title>AguaTech - Monitor de Calidad del Agua</title>
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <!-- Navegación-->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">💧</span>
+                <h1>AguaTech</h1>
+            </div>
+            
+            <label for="menu-toggle" class="menu-button">
+                <span class="hamburger"></span>
+            </label>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#sensores">Sensores</a></li>
+                    <li><a href="#reportes">Reportes</a></li>
+                    <li><a href="#configuracion">Configuración</a></li>
+                    <li><a href="#ayuda">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Sección de Bienvenida -->
+        <section class="hero" id="dashboard">
+            <h2>Sistema de Monitoreo IoT en Tiempo Real</h2>
+            <p>Visualiza los niveles de pH, oxígeno y temperatura de tus instalaciones</p>
+        </section>
+
+        <!-- Sección de Métricas IoT (Cards Grid) -->
+        <section class="metrics-section" id="sensores">
+            <h2>Métricas de Calidad del Agua</h2>
+            
+            <div class="metrics-grid">
+                <!-- Card 1: pH -->
+                <article class="metric-card">
+                    <div class="card-icon ph-icon"></div>
+                    <h3>Nivel de pH</h3>
+                    <p class="metric-value">7.2</p>
+                    <p class="metric-unit">Unidad de pH</p>
+                    <p class="metric-status status-optimal">✓ Óptimo</p>
+                </article>
+
+                <!-- Card 2: Oxígeno Disuelto -->
+                <article class="metric-card">
+                    <div class="card-icon oxygen-icon"></div>
+                    <h3>Oxígeno Disuelto</h3>
+                    <p class="metric-value">8.5</p>
+                    <p class="metric-unit">mg/L</p>
+                    <p class="metric-status status-optimal">✓ Óptimo</p>
+                </article>
+
+                <!-- Card 3: Temperatura -->
+                <article class="metric-card">
+                    <div class="card-icon temp-icon"></div>
+                    <h3>Temperatura</h3>
+                    <p class="metric-value">22.3</p>
+                    <p class="metric-unit">°C</p>
+                    <p class="metric-status status-optimal">✓ Óptimo</p>
+                </article>
+
+                <!-- Card 4: Conductividad -->
+                <article class="metric-card">
+                    <div class="card-icon conductivity-icon"></div>
+                    <h3>Conductividad</h3>
+                    <p class="metric-value">450</p>
+                    <p class="metric-unit">µS/cm</p>
+                    <p class="metric-status status-warning">⚠ Moderado</p>
+                </article>
+
+                <!-- Card 5: Turbiedad -->
+                <article class="metric-card">
+                    <div class="card-icon turbidity-icon"></div>
+                    <h3>Turbiedad</h3>
+                    <p class="metric-value">0.8</p>
+                    <p class="metric-unit">NTU</p>
+                    <p class="metric-status status-optimal">✓ Óptimo</p>
+                </article>
+
+                <!-- Card 6: ORP (Potencial Redox) -->
+                <article class="metric-card">
+                    <div class="card-icon orp-icon"></div>
+                    <h3>Potencial Redox</h3>
+                    <p class="metric-value">215</p>
+                    <p class="metric-unit">mV</p>
+                    <p class="metric-status status-optimal">✓ Óptimo</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Información del Sistema -->
+        <section class="info-section" id="reportes">
+            <h2>Estado del Sistema</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Última Actualización</h3>
+                    <p>Hace 2 minutos</p>
+                    <p class="timestamp">27/05/2026 - 14:35:42</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Sensores Activos</h3>
+                    <p>6 de 6</p>
+                    <p class="sub-text">Todos en funcionamiento</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Almacenamiento</h3>
+                    <p>850 MB</p>
+                    <p class="sub-text">Datos registrados</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Control y Configuración -->
+        <section class="control-section" id="configuracion">
+            <h2>Panel de Control</h2>
+            
+            <div class="control-grid">
+                <button class="control-btn btn-primary">Generar Reporte</button>
+                <button class="control-btn btn-secondary">Exportar Datos</button>
+                <button class="control-btn btn-secondary">Calibrar Sensores</button>
+                <button class="control-btn btn-secondary">Configurar Alertas</button>
+            </div>
+        </section>
+
+        <!-- Sección de Ayuda -->
+        <section class="help-section" id="ayuda">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <div class="help-grid">
+                <article class="help-card">
+                    <h3>¿Cómo calibro los sensores?</h3>
+                    <p>Los sensores deben calibrarse mensualmente usando soluciones estándar. Accede al panel de calibración en Configuración.</p>
+                </article>
+                
+                <article class="help-card">
+                    <h3>¿Cuál es el rango normal de pH?</h3>
+                    <p>El pH óptimo para sistemas de acuicultura está entre 6.5 y 8.5. Nuestro sistema alerta fuera de estos rangos.</p>
+                </article>
+                
+                <article class="help-card">
+                    <h3>¿Con qué frecuencia se actualizan los datos?</h3>
+                    <p>Los datos se actualizan en tiempo real cada 30 segundos en dispositivos conectados a la red.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 AguaTech - Sistema de Monitoreo IoT. Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <a href="#politica">Política de Privacidad</a> |
+                <a href="#terminos">Términos de Servicio</a> |
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
